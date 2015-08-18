@@ -9,7 +9,7 @@ describe('Lytics', function() {
   var analytics;
   var lytics;
   var options = {
-    cid: '1896',
+    cid: '1477',
     cookie: 'lytics_cookie'
   };
 
