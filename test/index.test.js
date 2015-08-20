@@ -14,6 +14,8 @@ describe('Lytics', function() {
   };
 
   beforeEach(function() {
+    document.cookie += 'seerid=12345.12345';
+
     analytics = new Analytics();
     lytics = new Lytics(options);
     analytics.use(Lytics);
