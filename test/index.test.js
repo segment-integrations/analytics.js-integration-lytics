@@ -9,11 +9,13 @@ describe('Lytics', function() {
   var analytics;
   var lytics;
   var options = {
-    cid: '1896',
+    cid: '1477',
     cookie: 'lytics_cookie'
   };
 
   beforeEach(function() {
+    document.cookie += 'seerid=12345.12345';
+
     analytics = new Analytics();
     lytics = new Lytics(options);
     analytics.use(Lytics);
