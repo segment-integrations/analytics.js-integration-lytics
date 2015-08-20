@@ -106,7 +106,7 @@ describe('Lytics', function() {
 
       it('should send an id', function() {
         analytics.identify('id');
-        analytics.called(window.jstag.send, 'default', { _uid: 'id', id: 'id' });
+        analytics.called(window.jstag.send, 'default', { _uid: 'id' });
       });
 
       it('should send traits', function() {
@@ -116,7 +116,7 @@ describe('Lytics', function() {
 
       it('should send an id and traits', function() {
         analytics.identify('id', { trait: true });
-        analytics.called(window.jstag.send, 'default', { _uid: 'id', trait: true, id: 'id' });
+        analytics.called(window.jstag.send, 'default', { _uid: 'id', trait: true });
       });
     });
 
