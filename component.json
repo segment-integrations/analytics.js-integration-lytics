@@ -2,7 +2,7 @@
   "name": "analytics.js-integration-lytics",
   "repo": "segment-integrations/analytics.js-integration-lytics",
   "description": "The Lytics analytics.js integration.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
