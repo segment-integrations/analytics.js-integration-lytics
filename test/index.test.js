@@ -77,7 +77,7 @@ describe('Lytics', function() {
       var tag = lytics.templates.library;
 
       analytics.equal(tag.type, 'script');
-      analytics.equal(tag.attrs.src, 'https://api.lytics.io/api/tag/{{ cid }}/lio.js');
+      analytics.equal(tag.attrs.src, 'https://c.lytics.io/api/tag/{{ cid }}/lio.js');
     });
 
     describe('#page', function() {
