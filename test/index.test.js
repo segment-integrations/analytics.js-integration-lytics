@@ -35,9 +35,14 @@ describe('Lytics', function() {
     analytics.compare(Lytics, integration('Lytics')
       .global('jstag')
       .option('cid', '')
+      .option('stream', 'default')
       .option('cookie', 'seerid')
+      .option('min', true)
+      .option('loadid', false)
       .option('delay', 2000)
       .option('sessionTimeout', 1800)
+      .option('blockload', false)
+      .option('qsargs', [])
       .option('url', '//c.lytics.io'));
   });
 
