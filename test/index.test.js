@@ -36,6 +36,8 @@ describe('Lytics', function() {
       .global('jstag')
       .option('cid', '')
       .option('cookie', 'seerid')
+      .option('blockload', false)
+      .option('loadid', false)
       .option('delay', 2000)
       .option('sessionTimeout', 1800)
       .option('url', '//c.lytics.io'));
